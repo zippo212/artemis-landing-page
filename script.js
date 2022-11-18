@@ -7,7 +7,7 @@ function showNav(){
 function hidewNav(){
     nav.classList.remove('show');
 }
-var currPos = window.scrollY;
+let currPos = window.scrollY;
 document.addEventListener('scroll', () => {
   if (window.scrollY < currPos) {
   //scroll up
