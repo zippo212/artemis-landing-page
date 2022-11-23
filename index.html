@@ -4,18 +4,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./style.css">
     <title>NASA | Artemis</title>
 </head>
 <body>
     <nav id="navigation">
         <div class="navItem">
-            <img src="./img/PngItem_424592.png" height="45" alt="nasa logo">
+            <img class="nasa-logo" src="./img/NASA_logo.svg.png" height="42" alt="nasa logo">
         </div>
         <div class="navLinks">
             <ul>
-                <li><a href="#">Why</a></li>
-                <li><a href="#">How</a></li>
+                <li><a href="#why">Why</a></li>
+                <li><a href="#how">How</a></li>
             </ul>
         </div>
     </nav>
@@ -26,12 +30,278 @@
             </video>
         </div>
         <div class="opening-para">
-            <img src="./img/Artemis2024Moon-removebg.png" height="220" alt="">
             <p class="para">
                 With Artemis missions, NASA will land the first woman and first person of color on the Moon, using innovative technologies to explore more of the lunar surface than ever before. We will collaborate with commercial and international partners and establish the first long-term presence on the Moon. Then, we will use what we learn on and around the Moon to take the next giant leap: sending the first astronauts to Mars.
             </p>
         </div>
     </main>
+    <section id="why">
+        <div class="why-para">
+                <img class="moon2024" src="./img/Artemis2024Moon-removebg.png" height="300" alt="">
+                <h1>WHY WE ARE GOING TO THE MOON</h1>
+                <p class="para">
+                    We're going back to the Moon for scientific discovery, economic benefits, and inspiration for a new generation of explorers: the Artemis Generation. While maintaining American leadership in exploration, we will build a global alliance and explore deep space for the benefit of all.
+                </p>
+        </div>
+        <div class="why-content">
+            <div class="container">
+                <div class="why-images-content">
+                    <img class="why-images" id="discovery-img" src="./img/discovery.jpg" alt="">
+                    <button onclick="myAccord('discovery-p','discovery-img')">
+                        <p>
+                            DISCOVERY
+                            <br>
+                            <br>
+                        </p>
+                        <span class="plus">+</span>
+                    </button>
+                    <p id="discovery-p" class="show-para why-color">
+                        With Artemis, we're building on more than 50 years of exploration experience to reignite America's passion for discovery.
+                    </p>
+                </div>
+                <div class="why-images-content">
+                    <img class="why-images" id="economic-img" src="./img/economic.jpg" alt="">
+                    <button onclick="myAccord('economic-p','economic-img')">
+                        <p>
+                            ECONOMIC
+                            <br>
+                            OPPORTUNITY
+                        </p>
+                        <span class="plus">+</span>
+                    </button>
+                    <p id="economic-p" class="show-para why-color">
+                        Artemis missions enable a growing lunar economy by fueling new industries, supporting job growth, and furthering the demand for a skilled workforce.
+                    </p>
+                </div>
+                <div class="why-images-content">
+                    <img class="why-images" id="inspiration-img" src="./img/inspiration.jpg" alt="">
+                    <button onclick="myAccord('inspiration-p','inspiration-img')">
+                        <p>
+                            INSPIRATION FOR
+                            <br>
+                            A NEW GENERATION
+                        </p>
+                        <span class="plus">+</span>
+                    </button>
+                    <p id="inspiration-p" class="show-para why-color">
+                        We will explore more of the Moon than ever before with our commercial and international partners. Along the way, we will engage and inspire new audiences - we are the Artemis Generation.
+                    </p>
+                </div>
+            </div>
+            <div class="why-video-content">
+                <div class="why-video">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/bmC-FwibsZg" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="why-para">
+            <h1 class="success">OUR SUCCESS WILL CHANGE THE WORLD</h1>
+        </div>
+    </section>
+    <section id="how">
+        <div class="how-img">
+            <h2><span class="red-how">HOW</span> WE ARE GOING TO THE MOON</h2>
+        </div>
+        <div class="opening-para">
+            <p class="para">
+                We will build an Artemis Base Camp on the surface and the Gateway in lunar orbit. These elements will allow our robots and astronauts to explore more and conduct more science than ever before.
+            </p>
+        </div>
+        <div class="how-content">
+        <div class="how-container">
+            <div class="why-images-content">
+                <div class="why-image-p">
+                    <img class="why-images" id="Orion-img" src="./img/w-02.jpg" alt="">
+                    <p id="Orion-p" class="show-para why-color">
+                        The NASA spacecraft that will carry astronauts from Earth to lunar orbit and back.
+                        <a class="more-a" href="">more</a>
+                    </p>
+                </div>
+                <div>
+                    <button onclick="myAccord('Orion-p','Orion-img')">
+                        <p>
+                            Orion Spacecraft
+                            <br>
+                            <br>
+                        </p>
+                        <span class="plus">+</span>
+                    </button>
+                </div>
+            </div>
+            <div class="why-images-content">
+                <div class="why-image-p">
+                    <img class="why-images" id="sls-img" src="./img/w-01.jpg" alt="">
+                    <p id="sls-p" class="show-para why-color">
+                        The only rocket that can send Orion, astronauts, and cargo to the Moon on a single mission. Upon launch, the SLS will be the most powerful rocket in the world.
+                        <a class="more-a" href="">more</a>
+                    </p>
+                </div>
+                <div>
+                    <button onclick="myAccord('sls-p','sls-img')">
+                        <p>
+                            Space Launch System
+                            <br>
+                            Rocket
+                        </p>
+                        <span class="plus">+</span>
+                    </button>
+                </div>
+            </div>
+            <div class="why-images-content">
+                <div class="why-image-p">
+                    <img class="why-images" id="expo-img" src="./img/w-01a.jpg" alt="">
+                    <p id="expo-p" class="show-para why-color">
+                        The structures on the ground necessary to support launch and recovery of returning astronauts.
+                        <a class="more-a" href="">more</a>
+                    </p>
+                </div>
+                <div>
+                    <button onclick="myAccord('expo-p','expo-img')">
+                        <p>
+                            Exploration Ground
+                            <br>
+                            Systems
+                        </p>
+                        <span class="plus">+</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="how-container">
+            <div class="why-images-content">
+                <div class="why-image-p">
+                    <img class="why-images" id="gateway-img" src="./img/w-03.jpg" alt="">
+                    <p id="gateway-p" class="show-para why-color">
+                        The spaceship in lunar orbit where astronauts will transfer between Orion and the lander on regular Artemis missions. Gateway will remain in orbit for more than a decade, providing a place to live and work, and supporting long-term science and human exploration on and around the Moon.
+                        <a class="more-a" href="">more</a>
+                    </p>
+                </div>
+                <div>
+                    <button onclick="myAccord('gateway-p','gateway-img')">
+                        <p>
+                            Gateway
+                            <br>
+                            <br>
+                        </p>
+                        <span class="plus">+</span>
+                    </button>
+                </div>
+            </div>
+            <div class="why-images-content">
+                <div class="why-image-p">
+                    <img class="why-images" id="hls-img" src="./img/w-04.jpg" alt="">
+                    <p id="hls-p" class="show-para why-color">
+                        Built by American companies, human landing systems are the final mode of transportation that will take astronauts from lunar orbit to the surface and back to orbit.
+                        <a class="more-a" href="">more</a>
+                    </p>
+                </div>
+                <div>
+                    <button onclick="myAccord('hls-p','hls-img')">
+                        <p>
+                            Human
+                            <br>
+                            Landing System
+                        </p>
+                        <span class="plus">+</span>
+                    </button>
+                </div>
+            </div>
+            <div class="why-images-content">
+                <div class="why-image-p">
+                    <img class="why-images" id="base-img" src="./img/base-camp.jpg" alt="">
+                    <p id="base-p" class="show-para why-color">
+                        To give astronauts a place to live and work on the moon, the Artemis Base Camp concept includes a modern lunar cabin, a rover, and a mobile home.
+                        <a class="more-a" href="">more</a>
+                    </p>
+                </div>
+                <div>
+                    <button onclick="myAccord('base-p','base-img')">
+                        <p>
+                            Artemis
+                            <br>
+                            Base Camp
+                        </p>
+                        <span class="plus">+</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div class="why-para">
+            <h1 class="success">All that we build, all that we study, all that we do,
+                prepares us to go.
+            </h1>
+        </div>
+    </section>
+    <section id="mission">
+        <div class="mission-p">
+            <img class="we-go" src="./img/we-go.png" alt="">
+        </div>        
+    </section>
+    <section id="focused">
+        <div class="focused-video">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/OsIhTw0CK8U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+    </section>
+    <section id="logo">
+        <div class="logo">
+            <img src="./img/logo-for-annotations.png" alt="">
+            <p class="tip-logo"><span class="logo-title">TIP OF THE A -</span>The tip of the A of Artemis points beyond the Moon and signifies that our efforts at the Moon are not the conclusion, but rather the preparation for all that lies beyond.
+            </p>
+            <p class="blue-logo"><span class="logo-title">BLUE EARTH CRESCENT -</span>The crescent shows missions from our audience's perspective. From Earth we go. Back to Earth all that we learn and develop will return. This crescent also visualizes Artemis' bow as the source from which all energy and effort is sent.
+            </p>
+            <p class="moon-logo"><span class="logo-title">MOON -</span>The Moon is our next destination and a stepping stone for Mars. It is the focus of all Artemis efforts.
+            </p>
+            <p class="red-logo"><span class="logo-title">RED TRAJECTORY -</span>The trajectory moves from left to right through the crossbar of the “A” opposite that of Apollo. Thus highlighting the distinct differences in our return to the moon. The trajectory is red to symbolize our path to Mars.
+            </p>
+            <p class="a-logo"><span class="logo-title">A -</span>The A symbolizes an arrowhead from Artemis' quiver and represents launch.
+            </p>
+            <button class="show-logo" onclick="showInfo()">Show logo explanation</button>
+        </div>
+        <div class="logo-small">
+            <img src="./img/logo-for-annotations.png" alt="">
+            <div class="logo-s-info">
+                <p class="logo-s"><span class="logo-title">TIP OF THE A -</span>The tip of the A of Artemis points beyond the Moon and signifies that our efforts at the Moon are not the conclusion, but rather the preparation for all that lies beyond.
+                </p>
+                <p class="logo-s"><span class="logo-title">BLUE EARTH CRESCENT -</span>The crescent shows missions from our audience's perspective. From Earth we go. Back to Earth all that we learn and develop will return. This crescent also visualizes Artemis' bow as the source from which all energy and effort is sent.
+                </p>
+                <p class="logo-s"><span class="logo-title">MOON -</span>The Moon is our next destination and a stepping stone for Mars. It is the focus of all Artemis efforts.
+                </p>
+                <p class="logo-s"><span class="logo-title">RED TRAJECTORY -</span>The trajectory moves from left to right through the crossbar of the “A” opposite that of Apollo. Thus highlighting the distinct differences in our return to the moon. The trajectory is red to symbolize our path to Mars.
+                </p>
+                <p class="logo-s"><span class="logo-title">A -</span>The A symbolizes an arrowhead from Artemis' quiver and represents launch.
+                </p>
+            </div>
+        </div>
+    </section>
+    <section>
+        <div class="more">
+                <img class="banner" src="./img/NASAArtemis_Banner.png" alt="">
+            <div class="more-links">
+                <div class="links-1">
+                    <p><a class="link" href="">Artemis Blog</a></p>
+                    <p><a class="link" href="">Artemis News</a></p>
+                </div>
+                <p><a class="link" href="">Subscribe to <br/> NASA's Newsletter</a></p>
+            </div>
+        </div>
+    </section>
+    <section id="social">
+        <div class="social">
+                <h1>Follow</h1>
+                <div class="social-links">
+                    <a href="#" class="fa fa-facebook"></a>
+                    <a href="#" class="fa fa-twitter"></a>
+                    <a href="#" class="fa fa-tumblr"></a>
+                    <a href="#" class="fa fa-instagram"></a>
+                </div>
+        </div>
+    </section>
+    <footer>
+        <img src="./img/NASA_logo.svg.png" height="40" alt="">
+        <p>National Aeronautics and Space Administration</p>
+        <p>NASA Official: Brian Dunbar</p>
+    </footer>
     <script src="./script.js"></script>
 </body>
 </html>
